@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+
+        <form action="/customer" method="post">
+            <!-- date -->
+            <label for="orderDate">Order Date</label>
+            <input type="date" name="orderDate" id="orderDate" ><br>
+
+            <!-- alphanumaric -->
+            <label for="company">Company</label>
+            <input type="text" pattern="[a-zA-Z0-9]+" name="company" id="company"><br>
+
+            <!-- alphanumaric -->
+            <label for="owner">Owner</label>
+            <input type="text" pattern="[a-zA-Z0-9]+" name="owner" id="owner"><br>
+
+            <!-- string -->
+            <label for="item">Item</label>
+            <input type="text" name="item" id="item"><br>
+
+            <!-- integer -->
+            <label for="quantity">Quantity</label>
+            <input type="number" pattern="[0-9]+" name="quantity" id="quantity"><br>
+
+            <!-- float -->
+            <label for="weight">Weight</label>
+            <input type="number" step="0.001" name="weight" id="weight"><br>
+
+            <!-- string -->
+            <label for="shipment">Request for Shipment</label>
+            <input type="text" name="shipment" id="shipment"><br>
+            
+            <!-- string -->
+            <label for="trackingId">Tracking ID</label>
+            <input type="text" name="trackingId" id=""><br>
+
+            <!-- LxBxH -->
+            <label for="size">Shipment Size</label>
+            <input type="text" pattern="^[0-9]+,[0-9]+,[0-9]+$" name="size" id="size"><br>
+
+            <!-- integer -->
+            <label for="count">Box Count</label>
+            <input type="number" pattern="[0-9]+" name="count" id="count"><br>
+
+            <!-- string -->
+            <label for="specification">Specification</label>
+            <input type="text" name="specification" id="specification"><br>
+
+            <!-- string -->
+            <label for="checklistQuantity">Checklist Quantity</label>
+            <input type="text" name="checklistQuantity" id="checklistQuantity"><br>
+
+            <button class="btn">SUBMIT</button>
+        </form>
+        <!-- <a href="/login">Invalid User Please Login</a> -->
+    </div>
+</body>
+
+</html>
